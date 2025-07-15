@@ -64,15 +64,29 @@
 <body class="antialiased">
 
     <!-- Header/Navigation Bar -->
-    <header class="bg-white shadow-md py-4">
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
         <nav class="container mx-auto px-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-indigo-600 rounded-lg p-2 hover:bg-indigo-50 transition duration-300">Siviedeif Ai Software</a>
-            <div class="space-x-4">
-                <!-- Updated navigation links -->
+            <a href="#" class="text-xl font-bold text-indigo-600 rounded-lg p-2 hover:bg-indigo-50 transition duration-300">Siviedeif Ai Software</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-4">
                 <a href="#features" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300 rounded-lg p-2 hover:bg-gray-100">Servicios</a>
                 <a href="#contact" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300 rounded-lg p-2 hover:bg-gray-100">Contacto</a>
             </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-indigo-600 focus:outline-none">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
         </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <a href="#features" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Servicios</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Contacto</a>
+        </div>
     </header>
 
     <!-- Hero Section - Updated with new concise text -->
