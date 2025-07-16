@@ -1,0 +1,51 @@
+# .gitignore for LandingPage2 project
+xdata/
+
+
+
+# --- SISTEMA OPERATIVO ---
+.DS_Store         # macOS
+Thumbs.db         # Windows
+ehthumbs.db       # Windows
+desktop.ini       # Windows
+
+# --- EDITORES DE CÓDIGO ---
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# --- ARCHIVOS TEMPORALES ---
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.orig
+
+# --- ARCHIVOS DE NAVEGADOR / CACHE ---
+.cache/
+*.cache
+*.local
+*.session
+*.pid
+
+# --- ARCHIVOS DE COMPILACIÓN (si usas herramientas externas) ---
+dist/
+build/
+out/
+
+# --- ARCHIVOS ZIP o EXPORTACIONES ---
+*.zip
+*.rar
+*.tar.gz
+
+# --- SISTEMA DE CONTROL (Git o VS Code) ---
+*.env
+.env.local
+*.log
+
+# --- Otros comunes ---
+node_modules/      # Por si usas alguna dependencia JS mínima
+npm-debug.log*     # En caso de usar npm para herramientas
+coverage/          # Para futuras pruebas automatizadas
