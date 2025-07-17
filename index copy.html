@@ -21,18 +21,15 @@
             scroll-behavior: smooth;
         }
         /* Custom styles for the video placeholder */
-
         .video-container {
             position: relative;
             width: 100%;
-            aspect-ratio: 16 / 9; /* Mejor que padding-bottom para mantener proporción */
-            background-color: #94a3b8;
-            border-radius: 1rem;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            background-color: #94a3b8; /* Slate gray for video placeholder */
+            border-radius: 1rem; /* Rounded corners */
             overflow: hidden;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Shadow */
         }
-
-
         .video-overlay-button {
             position: absolute;
             top: 50%;
