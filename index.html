@@ -6,6 +6,7 @@
     <title>Siviedeif - Turning Ai into action.</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+ 
     <!-- Font Awesome CDN for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -435,6 +436,7 @@
                             <a href="#" class="text-indigo-600 hover:underline">Términos y Condiciones</a>
                         </label>
                     </div>
+
                     <button type="submit"
                             class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transition duration-300 transform hover:scale-105">
                         ENVIAR
@@ -470,6 +472,7 @@
         </div>
     </footer>
 
+
     <script>
         // Load the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
@@ -501,6 +504,7 @@
         // Function to toggle video sound
         function toggleSound() {
             if (player && typeof player.isMuted === 'function' && player.isMuted()) {
+                player.seekTo(0, true);         // Reinicia el video
                 player.playVideo(); // Ensure video is playing
                 player.unMute();
                 toggleSoundButton.style.display = 'none'; // Hide the button after first click
